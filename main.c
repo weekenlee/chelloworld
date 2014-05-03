@@ -7,8 +7,9 @@ struct _user_table_item
 {
   const  char  *key;
   const  char  *value;
-}user[1]={
-    { "name","<world>"}
+}user[2]={
+    { "name","<world>"},
+    {"id","18888888"}
 };
 
 typedef struct _user_table_item user_table_item;
@@ -43,6 +44,10 @@ loadfile(lua_State *L, const char* filename)
     lua_pushstring(L,user[0].key);
     lua_pushstring(L,user[0].value);
     lua_settable(L,-3);
+    lua_pushstring(L,user[1].key);
+    lua_pushstring(L,user[1].value);
+    lua_settable(L,-3);
+
 
     if(lua_pcall(L,2,1,0) != 0)
     {
