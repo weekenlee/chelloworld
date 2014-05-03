@@ -1,3 +1,8 @@
+/*
+ *c 调用lua模板引擎
+ *作者:liweijian
+ *日期:20140503
+ */
 #include <stdio.h>
 #include "luasrc/lua.h"
 #include "luasrc/lualib.h"
