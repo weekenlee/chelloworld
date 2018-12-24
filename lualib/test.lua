@@ -1,4 +1,5 @@
-package.path = '/home/lwj/code/lua/luc/chelloworld/lualib/?.lua'
+--package.path = '/home/lwj/code/lua/luc/chelloworld/lualib/?.lua'
+package.path = './?.lua'
 local slt2 = require('slt2')
 
 function escapeHTML(str)

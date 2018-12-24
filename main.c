@@ -42,7 +42,7 @@ loadfile(lua_State *L, const char* filename)
 
     lua_getglobal(L,"htmlrender");
     //压入第一个参数
-    lua_pushstring(L,"/home/lwj/code/lua/luc/chelloworld/lualib/tmp.tmpl");
+    lua_pushstring(L,"./lualib/tmp.tmpl");
     //压入第二个参数
     //通过函数参数来传递table
     lua_newtable(L);
